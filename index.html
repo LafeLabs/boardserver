@@ -71,6 +71,9 @@ https://cloud9-sdk.readme.io/docs/language-mode
 
 <script>
 
+document.getElementById("maineditor").style.top = "100px";
+document.getElementById("maineditor").style.height = (innerHeight - 150).toString() + "px";
+
 prototypescroll = "name board";
 
 currentFile = "boards/home";
@@ -78,8 +81,7 @@ var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         filedata = this.responseText;
-        setmode();
-        editor.setValue(filedata);
+        document.getElementById("maineditor").value = filedata;
         document.getElementById("currentfilename").innerHTML = currentFile;
     }
 };
@@ -145,7 +147,8 @@ lightmode = false;
 document.getElementById("lightdarkbutton").onclick = function(){
     lightmode = !lightmode;
     if(lightmode){
-
+        document.getElementById("maineditor").style.backgroundColor = "#e0e0e0";
+        document.getElementById("maineditor").style.color = "black";        
         document.body.style.backgroundColor = "#d0d0d0";
         document.body.style.color = "black";
         document.getElementById("newscrollinput").style.backgroundColor = "#d0d0d0";
@@ -153,7 +156,8 @@ document.getElementById("lightdarkbutton").onclick = function(){
 
     }
     else{
-
+        document.getElementById("maineditor").style.backgroundColor = "#303030";
+        document.getElementById("maineditor").style.color = "white";
         document.body.style.backgroundColor = "#202020";
         document.body.style.color = "white";
         document.getElementById("newscrollinput").style.backgroundColor = "#202020";
@@ -292,10 +296,13 @@ input{
     left:0%;
     top:5em;
     bottom:1em;
-    right:30%;
+    width:70%;
+    height:90%;
     font-size:22px;
     border:solid;
     border-color:black;
+    background-color:#303030;
+    color:white;
 }
 .button{
     cursor:pointer;
