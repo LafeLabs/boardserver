@@ -9,7 +9,7 @@
  - *everything replicates*
  - *everything evolves*
  - *everything dies*
- - [boardset.html](codeset.html)
+ - [boardset.html](boardset.html)
  - [qrcode.html](qrcode.html)
  - [global replicator code link](https://raw.githubusercontent.com/LafeLabs/boardserver/main/php/replicator.txt)
  - [local replicator code link](php/replicator.txt)

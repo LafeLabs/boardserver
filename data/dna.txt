@@ -31,6 +31,10 @@
         "text2php.txt"
     ],
     "boards": [
-        "home"
+        "forsale",
+        "home",
+        "rantsandraves",
+        "wanted",
+        "wildlife"
     ]
 }
