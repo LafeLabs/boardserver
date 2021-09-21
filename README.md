@@ -17,6 +17,7 @@
  - [http://localhost](http://localhost)
  - [../](../)
  - [editor.php](editor.php)
+ - [fork.html](fork.html)
  - [replicator.php](replicator.php)
  - [boardserver github repo](https://github.com/LafeLabs/boardserver)
  - [bioweb github repo](https://github.com/LafeLabs/bioweb)

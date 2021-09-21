@@ -2,12 +2,12 @@
 <?php
 
 
-$localscrollsetraw = file_get_contents("data/scrollset.txt");
+$localscrollsetraw = file_get_contents("data/boardset.txt");
 $localscrollset = json_decode($localscrollsetraw);
 
 $server = $localscrollset->server;
 
-$remotescrollsetraw = file_get_contents($server."data/scrollset.txt");
+$remotescrollsetraw = file_get_contents($server."data/boardset.txt");
 $remotescrollset = json_decode($remotescrollsetraw);
 $scrolls = $remotescrollset->scrolls;
 
