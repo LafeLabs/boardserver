@@ -9,7 +9,7 @@ $server = $localboardset->server;
 
 $remoteboardsetraw = file_get_contents($server."data/boardset.txt");
 $remoteboardset = json_decode($remoteboardsetraw);
-$boards = $remotescrollset->boards;
+$boards = $remoteboardset->boards;
 
 foreach($boards as $value){
 
