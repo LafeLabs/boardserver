@@ -39,9 +39,9 @@ foreach($dna->php as $value){
 
 }
 
-foreach($dna->code as $value){
+foreach($dna->boards as $value){
     
-    copy($baseurl."code/".$value,"code/".$value);
+    copy($baseurl."boards/".$value,"boards/".$value);
 
 }
 
