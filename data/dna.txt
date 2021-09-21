@@ -1,0 +1,36 @@
+{
+    "html": [
+        "README.md",
+        "boarddelete.html",
+        "boardset.html",
+        "index.html",
+        "qrcode.html",
+        "readme.html",
+        "scrolleditor.html"
+    ],
+    "data": [
+        "boardset.txt",
+        "dna.txt"
+    ],
+    "iconsymbols": [
+        "delete.svg",
+        "edit.svg",
+        "home.svg",
+        "lightdark.svg",
+        "scroll.svg"
+    ],
+    "php": [
+        "boardsetreplicator.txt",
+        "deletefile.txt",
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "replicator.txt",
+        "text2php.txt"
+    ],
+    "boards": [
+        "home"
+    ]
+}
