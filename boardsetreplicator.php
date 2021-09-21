@@ -2,22 +2,22 @@
 <?php
 
 
-$localscrollsetraw = file_get_contents("data/boardset.txt");
-$localscrollset = json_decode($localscrollsetraw);
+$localboardsetraw = file_get_contents("data/boardset.txt");
+$localboardset = json_decode($localboardsetraw);
 
-$server = $localscrollset->server;
+$server = $localboardset->server;
 
-$remotescrollsetraw = file_get_contents($server."data/boardset.txt");
-$remotescrollset = json_decode($remotescrollsetraw);
-$scrolls = $remotescrollset->scrolls;
+$remoteboardsetraw = file_get_contents($server."data/boardset.txt");
+$remoteboardset = json_decode($remoteboardsetraw);
+$boards = $remotescrollset->boards;
 
-foreach($scrolls as $value){
+foreach($boards as $value){
 
-    copy($server."scrolls/".$value,"scrolls/".$value);
+    copy($server."boards/".$value,"boards/".$value);
 
 }
 
-echo json_encode($scrolls,JSON_PRETTY_PRINT);
+echo json_encode($boards,JSON_PRETTY_PRINT);
     
 ?>
 </pre>

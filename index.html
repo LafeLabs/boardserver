@@ -24,6 +24,7 @@ https://cloud9-sdk.readme.io/docs/language-mode
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
 
 <title>Geometron Board Server</title>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
 <table id = "linktable">
@@ -41,7 +42,7 @@ https://cloud9-sdk.readme.io/docs/language-mode
                 <img src = "iconsymbols/scroll.svg"/>
             </a>
         </td>
-
+        <td id = "qrcode"></td>
     </tr>
 </table>
 
@@ -71,7 +72,7 @@ https://cloud9-sdk.readme.io/docs/language-mode
 
 <script>
 
-document.getElementById("maineditor").style.top = "100px";
+document.getElementById("maineditor").style.top = "150px";
 document.getElementById("maineditor").style.height = (innerHeight - 150).toString() + "px";
 
 prototypescroll = "name board";
@@ -233,7 +234,22 @@ function addcodelink(codename){
     }
 }
 
+codesquaresize = 120;
 
+//globalurl = "http://www.trashrobot.org/qrcode.html";
+globalurl = window.location.href;
+
+
+qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: globalurl,
+	width: codesquaresize,
+	height: codesquaresize,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+    
+qrcode.makeCode(globalurl);
 
 </script>
 <style>
