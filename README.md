@@ -21,6 +21,9 @@
  - [replicator.php](replicator.php)
  - [boardserver github repo](https://github.com/LafeLabs/boardserver)
  - [bioweb github repo](https://github.com/LafeLabs/bioweb)
+ - [copy code server replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/codeserver/main/php/replicator.txt&to=replicator.php)
+ - [copy bioweb replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/bioweb/main/php/replicator.txt&to=replicator.php)
+ - [copy full geometron thing replicator](copy.php?from=https://raw.githubusercontent.com/LafeLabs/thing/master/php/replicator.txt&to=replicator.php)
 
 
 
