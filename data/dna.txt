@@ -22,6 +22,7 @@
     ],
     "php": [
         "boardsetreplicator.txt",
+        "copy.txt",
         "deletefile.txt",
         "dir.txt",
         "dnagenerator.txt",
