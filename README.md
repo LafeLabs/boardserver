@@ -111,7 +111,7 @@ Then install the [geometron code server software](https://github.com/lafelabs/co
 <pre style = "overflow:scroll">
 cd /var/www/html
 sudo rm index.html
-sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/codeserver/main/php/replicator.txt
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/boardserver/main/php/replicator.txt
 cd ..
 sudo chmod -R 0777 *
 cd html
